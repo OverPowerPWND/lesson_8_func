@@ -26,11 +26,13 @@ int div(q, w, e) {
 }
 
 // задание 5
-Function? check(o) {
+bool check(List o) {
+  var result = false;
   for (var q = 1; q < o.length; ++q) {
-    if (o[q] == o[q - 1]) {
-      return check(bool);
+    if (o[q] == o[q]) {
+      result = true;
     }
   }
+  return result;
 }
 // сложно,нужна помощь
