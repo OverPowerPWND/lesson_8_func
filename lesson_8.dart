@@ -1,11 +1,14 @@
 // задание 1
+
 void main() {
   final b = mul(7);
   final z = sum(2, 1);
   final v = div(10, 3, 2);
+  final g = check([3, 2, 1, 4, 5, 6, 7, 5]);
   print(b);
   print(z);
   print(v);
+  print(g);
 }
 
 int mul(int a) {
@@ -23,21 +26,11 @@ int div(q, w, e) {
 }
 
 // задание 5
-Function? check(a) {
-  for (var q = 1; q < a.length; ++q) {
-    if (a[q] == a[q - 1]) {
-      return true;
+Function? check(o) {
+  for (var q = 1; q < o.length; ++q) {
+    if (o[q] == o[q - 1]) {
+      return check(bool);
     }
-    Console.log(check([
-      3,
-      4,
-      5,
-      6,
-      7,
-      5,
-    ]))
-        ? 'Да'
-        : 'Нет';
   }
 }
 // сложно,нужна помощь
